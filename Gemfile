@@ -5,9 +5,8 @@ gem 'rails', '3.1.0'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
-
 gem 'ransack'
+gem 'sqlite3'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -22,7 +21,6 @@ gem 'jquery-rails'
 gem 'machinist'
 gem 'faker'
 
-group :test do
-  # Pretty printed test output
-  gem 'turn', :require => false
+group :development, :test do
+  gem 'rspec-rails'
 end
